@@ -1,26 +1,18 @@
 #ifndef CIRCULO_H
 #define CIRCULO_H
+#include "FiguraGeometrica.h"
+#include <iostream>
 
-using namespace std;
+class Circulo: public FiguraGeometrica{
+  private:
+    int raio;
+  public:
+    //Circulo();
 
-class Circulo : public FiguraGeometrica{
+    void setRaio(int r);
+    int getRaio();
 
-    public:
-        Circulo();
-        Circulo(string Nom, int R);
-
-        void setRaio(int R);
-        int getRaio();
-
-        float getPI();
-
-        float Calcularea();
-
-    protected:
-
-    private:
-        int raio;
-        const float pi = 3.14;
+    float calcularArea(int raio);
 };
 
-#endif // CIRCULO_H
+#endif //CIRCULO_H

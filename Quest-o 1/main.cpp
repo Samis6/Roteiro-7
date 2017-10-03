@@ -32,33 +32,33 @@ int main(){
 	Quadrado Qua(Figurx, Base, Altura);
 
 
-	cout << " A area do " << Q.getNome() << " e : " << Q.calcularArea() << endl;
+	cout << " A area do " << Qua.getNome() << " e : " << Qua.Calcularea() << endl;
 	}
 
 	else if(Figurx == "Triangulo" || Figurx == "triangulo"){
 	cout << "Digite a base do triangulo?" << endl;
-	cin >> b;
+	cin >> Base;
 	cout << "Digite a altura do triangulo?" << endl;
-	cin >> h;
+	cin >> Altura;
 
-	Triangulo T(Figurx, b, h);
+	Triangulo T(Figurx, Base, Altura);
 
-	cout<<"A area do "<< T.getNome() << " e : " << T.calcularArea() << endl;
+	cout<<"A area do "<< T.getNome() << " e : " << T.Calcularea() << endl;
 
 	} else if (Figurx == "Circulo" || Figurx == "circulo"){
 
 	cout << "Digite o raio do seu circulo?" << endl;
-	cin >> r;
+	cin >> Raio;
 
-	Circulo C(Figurx, r);
+	Circulo C(Figurx, Raio);
 
-	cout<<"A area do "<< C.getNome() << " e : " << C.calcularArea() << endl;
+	cout<<"A area do "<< C.getNome() << " e : " << C.calcularea() << endl;
 
 
 
 
 	}else{
-		cout<<"OBG POR USAR NOSSO PROGRAMA"<<endl;
+		cout<<"Fim"<<endl;
 		return 1;
 	}
 
